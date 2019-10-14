@@ -1,0 +1,378 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_ST_STM32F1:STM32F103C8Tx U?
+U 1 1 5DA33B16
+P 5375 3300
+F 0 "U?" H 5325 1711 50  0000 C CNN
+F 1 "STM32F103C8Tx" H 5325 1620 50  0000 C CNN
+F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4775 1900 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 5375 3300 50  0001 C CNN
+	1    5375 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:CC56-12SURKWA U?
+U 1 1 5DA353D7
+P 8325 3400
+F 0 "U?" H 8325 4067 50  0000 C CNN
+F 1 "CC56-12SURKWA" H 8325 3976 50  0000 C CNN
+F 2 "Display_7Segment:CA56-12SURKWA" H 8325 2800 50  0001 C CNN
+F 3 "http://www.kingbright.com/attachments/file/psearch/000/00/00/CC56-12SURKWA(Ver.7A).pdf" H 7895 3430 50  0001 C CNN
+	1    8325 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Sensor:BME280 U?
+U 1 1 5DA36C68
+P 3200 4500
+F 0 "U?" H 2771 4546 50  0000 R CNN
+F 1 "BME280" H 2771 4455 50  0000 R CNN
+F 2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" H 3200 4300 50  0001 C CNN
+F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME280_DS001-11.pdf" H 3200 4300 50  0001 C CNN
+	1    3200 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA3B3DE
+P 6525 2725
+F 0 "R?" V 6450 2550 50  0000 C CNN
+F 1 "160R" V 6450 2725 50  0000 C CNN
+F 2 "" H 6525 2725 50  0001 C CNN
+F 3 "~" H 6525 2725 50  0001 C CNN
+	1    6525 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA3FD51
+P 6525 2875
+F 0 "R?" V 6450 2700 50  0000 C CNN
+F 1 "160R" V 6450 2875 50  0000 C CNN
+F 2 "" H 6525 2875 50  0001 C CNN
+F 3 "~" H 6525 2875 50  0001 C CNN
+	1    6525 2875
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA3FFA3
+P 6525 3025
+F 0 "R?" V 6450 2850 50  0000 C CNN
+F 1 "160R" V 6450 3025 50  0000 C CNN
+F 2 "" H 6525 3025 50  0001 C CNN
+F 3 "~" H 6525 3025 50  0001 C CNN
+	1    6525 3025
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA400F9
+P 6525 3175
+F 0 "R?" V 6450 3000 50  0000 C CNN
+F 1 "160R" V 6450 3175 50  0000 C CNN
+F 2 "" H 6525 3175 50  0001 C CNN
+F 3 "~" H 6525 3175 50  0001 C CNN
+	1    6525 3175
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA4028E
+P 6525 3325
+F 0 "R?" V 6450 3150 50  0000 C CNN
+F 1 "160R" V 6450 3325 50  0000 C CNN
+F 2 "" H 6525 3325 50  0001 C CNN
+F 3 "~" H 6525 3325 50  0001 C CNN
+	1    6525 3325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA4051F
+P 6525 3475
+F 0 "R?" V 6450 3300 50  0000 C CNN
+F 1 "160R" V 6450 3475 50  0000 C CNN
+F 2 "" H 6525 3475 50  0001 C CNN
+F 3 "~" H 6525 3475 50  0001 C CNN
+	1    6525 3475
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA406DE
+P 6525 3625
+F 0 "R?" V 6450 3450 50  0000 C CNN
+F 1 "160R" V 6450 3625 50  0000 C CNN
+F 2 "" H 6525 3625 50  0001 C CNN
+F 3 "~" H 6525 3625 50  0001 C CNN
+	1    6525 3625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA408F1
+P 6525 3800
+F 0 "R?" V 6450 3625 50  0000 C CNN
+F 1 "160R" V 6450 3800 50  0000 C CNN
+F 2 "" H 6525 3800 50  0001 C CNN
+F 3 "~" H 6525 3800 50  0001 C CNN
+	1    6525 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6625 3800 7225 3800
+Wire Wire Line
+	6625 3625 6750 3625
+Wire Wire Line
+	6750 3625 6750 3700
+Wire Wire Line
+	6750 3700 7225 3700
+Wire Wire Line
+	6625 3475 6775 3475
+Wire Wire Line
+	6775 3475 6775 3600
+Wire Wire Line
+	6775 3600 7225 3600
+Wire Wire Line
+	6625 3325 6800 3325
+Wire Wire Line
+	6800 3325 6800 3500
+Wire Wire Line
+	6800 3500 7225 3500
+Wire Wire Line
+	6625 3175 6825 3175
+Wire Wire Line
+	6825 3175 6825 3400
+Wire Wire Line
+	6825 3400 7225 3400
+Wire Wire Line
+	6625 3025 6875 3025
+Wire Wire Line
+	6875 3025 6875 3300
+Wire Wire Line
+	6875 3300 7225 3300
+Wire Wire Line
+	6625 2875 6925 2875
+Wire Wire Line
+	6925 2875 6925 3200
+Wire Wire Line
+	6925 3200 7225 3200
+Wire Wire Line
+	6625 2725 6975 2725
+Wire Wire Line
+	6975 2725 6975 3100
+Wire Wire Line
+	6975 3100 7225 3100
+Wire Wire Line
+	5975 3100 5975 2725
+Wire Wire Line
+	5975 2725 6425 2725
+Wire Wire Line
+	5975 3200 6025 3200
+Wire Wire Line
+	6025 3200 6025 2875
+Wire Wire Line
+	6025 2875 6425 2875
+Wire Wire Line
+	5975 3300 6075 3300
+Wire Wire Line
+	6075 3300 6075 3025
+Wire Wire Line
+	6075 3025 6425 3025
+Wire Wire Line
+	5975 3400 6125 3400
+Wire Wire Line
+	6125 3400 6125 3175
+Wire Wire Line
+	6125 3175 6425 3175
+Wire Wire Line
+	5975 3500 6175 3500
+Wire Wire Line
+	6175 3500 6175 3325
+Wire Wire Line
+	6175 3325 6425 3325
+Wire Wire Line
+	5975 3600 6225 3600
+Wire Wire Line
+	6225 3600 6225 3475
+Wire Wire Line
+	6225 3475 6425 3475
+Wire Wire Line
+	5975 3700 6275 3700
+Wire Wire Line
+	6275 3700 6275 3625
+Wire Wire Line
+	6275 3625 6425 3625
+Wire Wire Line
+	5975 3800 6425 3800
+$Comp
+L Device:R_Small R?
+U 1 1 5DA4B4AB
+P 6525 3975
+F 0 "R?" V 6450 3800 50  0000 C CNN
+F 1 "1K" V 6450 3975 50  0000 C CNN
+F 2 "" H 6525 3975 50  0001 C CNN
+F 3 "~" H 6525 3975 50  0001 C CNN
+	1    6525 3975
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA4B840
+P 6525 4125
+F 0 "R?" V 6450 3950 50  0000 C CNN
+F 1 "1K" V 6450 4125 50  0000 C CNN
+F 2 "" H 6525 4125 50  0001 C CNN
+F 3 "~" H 6525 4125 50  0001 C CNN
+	1    6525 4125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DA4BB25
+P 6525 4275
+F 0 "R?" V 6450 4100 50  0000 C CNN
+F 1 "1K" V 6450 4275 50  0000 C CNN
+F 2 "" H 6525 4275 50  0001 C CNN
+F 3 "~" H 6525 4275 50  0001 C CNN
+	1    6525 4275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5DA4CA7D
+P 9500 4025
+F 0 "Q?" H 9691 4071 50  0000 L CNN
+F 1 "NPN" H 9691 3980 50  0000 L CNN
+F 2 "" H 9700 4125 50  0001 C CNN
+F 3 "~" H 9500 4025 50  0001 C CNN
+	1    9500 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5DA50B14
+P 9950 4300
+F 0 "Q?" H 10141 4346 50  0000 L CNN
+F 1 "NPN" H 10141 4255 50  0000 L CNN
+F 2 "" H 10150 4400 50  0001 C CNN
+F 3 "~" H 9950 4300 50  0001 C CNN
+	1    9950 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_EBC Q?
+U 1 1 5DA5152A
+P 10375 4600
+F 0 "Q?" H 10566 4646 50  0000 L CNN
+F 1 "NPN" H 10566 4555 50  0000 L CNN
+F 2 "" H 10575 4700 50  0001 C CNN
+F 3 "~" H 10375 4600 50  0001 C CNN
+	1    10375 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9425 3700 9600 3700
+Wire Wire Line
+	9600 3700 9600 3825
+Wire Wire Line
+	9425 3600 10050 3600
+Wire Wire Line
+	10050 3600 10050 4100
+Wire Wire Line
+	9425 3500 10475 3500
+Wire Wire Line
+	10475 3500 10475 4400
+Wire Wire Line
+	5975 3900 6175 3900
+Wire Wire Line
+	6175 3900 6175 3975
+Wire Wire Line
+	6175 3975 6425 3975
+Wire Wire Line
+	5975 4000 6125 4000
+Wire Wire Line
+	6125 4000 6125 4125
+Wire Wire Line
+	6125 4125 6425 4125
+Wire Wire Line
+	5975 4100 6050 4100
+Wire Wire Line
+	6050 4100 6050 4275
+Wire Wire Line
+	6050 4275 6425 4275
+Wire Wire Line
+	6625 3975 8375 3975
+Wire Wire Line
+	8375 3975 8375 4025
+Wire Wire Line
+	8375 4025 9300 4025
+Wire Wire Line
+	6625 4125 8275 4125
+Wire Wire Line
+	8275 4125 8275 4300
+Wire Wire Line
+	8275 4300 9750 4300
+Wire Wire Line
+	6625 4275 8125 4275
+Wire Wire Line
+	8125 4275 8125 4600
+Wire Wire Line
+	8125 4600 10175 4600
+Wire Wire Line
+	9600 4225 9600 4975
+Wire Wire Line
+	9600 4975 10050 4975
+Wire Wire Line
+	10475 4975 10475 4800
+Wire Wire Line
+	10050 4500 10050 4975
+Connection ~ 10050 4975
+Wire Wire Line
+	10050 4975 10475 4975
+Wire Wire Line
+	10050 4975 10050 5150
+$Comp
+L power:GND #PWR?
+U 1 1 5DA6140C
+P 10050 5150
+F 0 "#PWR?" H 10050 4900 50  0001 C CNN
+F 1 "GND" H 10055 4977 50  0000 C CNN
+F 2 "" H 10050 5150 50  0001 C CNN
+F 3 "" H 10050 5150 50  0001 C CNN
+	1    10050 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4400 4675 4400
+Wire Wire Line
+	3800 4200 4100 4200
+Wire Wire Line
+	4100 4200 4100 4500
+Wire Wire Line
+	4100 4500 4675 4500
+Wire Wire Line
+	3800 4600 4675 4600
+Wire Wire Line
+	3800 4800 4250 4800
+Wire Wire Line
+	4250 4800 4250 4300
+Wire Wire Line
+	4250 4300 4675 4300
+NoConn ~ 9425 3800
+$EndSCHEMATC
