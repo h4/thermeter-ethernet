@@ -4,3 +4,4 @@
 #define DISPLAY_GPIO_CLK_ENABLE()              __HAL_RCC_GPIOA_CLK_ENABLE()
 
 void LED_Init();
+void LED_Num(int num);

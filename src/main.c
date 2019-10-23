@@ -16,23 +16,20 @@ int main(void) {
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_6, 1);
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_7, 0);
 
+  int pos = 0;
+  int tick = 0;
+
   while (1)
   {
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 1);
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(500);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 1);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(500);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 1);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
-    HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
-    HAL_Delay(500);
+    LED_Num(pos);
+    if (tick > 2000) {
+      tick = 0;
+      pos++;
+      if (pos > 999) {
+        pos = 0;
+      }
+    }
+    tick++;
   }
 }
 
