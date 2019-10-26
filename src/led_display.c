@@ -38,18 +38,10 @@ void LED_Init() {
   LED_GPIO_CLK_ENABLE();
   DISPLAY_GPIO_CLK_ENABLE();
 
-  init_pin(GPIO_PIN_0, GPIOA);
-  init_pin(GPIO_PIN_1, GPIOA);
-  init_pin(GPIO_PIN_2, GPIOA);
-  init_pin(GPIO_PIN_3, GPIOA);
-  init_pin(GPIO_PIN_4, GPIOA);
-  init_pin(GPIO_PIN_5, GPIOA);
-  init_pin(GPIO_PIN_6, GPIOA);
-  init_pin(GPIO_PIN_7, GPIOA);
+  uint32_t PINS = GPIO_PIN_0 | GPIO_PIN_1 | GPIO_PIN_2 | GPIO_PIN_3 | GPIO_PIN_4 | GPIO_PIN_5 | GPIO_PIN_6 | GPIO_PIN_7 | 
+    GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10;
 
-  init_pin(GPIO_PIN_8, GPIOA);
-  init_pin(GPIO_PIN_9, GPIOA);
-  init_pin(GPIO_PIN_10, GPIOA);
+  init_pin(PINS, GPIOA);
 
   init_pin(GPIO_PIN_13, GPIOC);
 }
@@ -73,27 +65,15 @@ void LED_Num(int num) {
   int n2 = (num % 100) / 10;
   int n3 = num % 10;
 
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10, 0);
   _show_digit(n1);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 1);
   
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10, 0);
   _show_digit(n2);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 1);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
-
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
+  
+  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8 | GPIO_PIN_9 | GPIO_PIN_10, 0);
   _show_digit(n3);
   HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, 1);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, 0);
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, 0);
 }
